@@ -53,14 +53,42 @@
 const firstName = 'sam';
 
 // boolean
-const hasKids = true;
+// const hasKids = true;
 
-// null
-const aptNumber = null ;
+// // null
+// const aptNumber = null ;
 
 
-// undefined 
-let score;
+// // undefined 
+// let score;
 
-const output = score;
-console.log(output, typeof output);
+// // symbol
+// const id = symbol('id');
+
+// big int
+// const n = 900844933829348384n;
+
+// // reference types
+// const numbers = [1, 2, 3, 4];
+// const person ={
+//   name: 'brad',
+// }
+// function sayHello( ){
+//   console.log('Hello');
+// }
+// const output = sayHello;
+
+
+// console.log(output, typeof output);
+
+
+
+// values are stored on the stack
+const nanme = 'john';
+const age = 30;
+
+// referendce values are stored on the heap
+const person = {
+  name: 'brad',
+  age: 40
+}
