@@ -21,4 +21,20 @@ if (true){
   score = score + 1
 }
 
+
 console.log(score);
+
+const x =100;
+
+const arr = [1,2,3,4];
+arr.push(5);
+console.log(arr);
+
+
+const person = {
+  name: 'brad',
+};
+
+person.name = 'john';
+person.mail = 'ghrnhs@gmail.com'
+console.log(person);
