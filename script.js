@@ -52,5 +52,15 @@
 // string
 const firstName = 'sam';
 
-const output = firstName;
+// boolean
+const hasKids = true;
+
+// null
+const aptNumber = null ;
+
+
+// undefined 
+let score;
+
+const output = score;
 console.log(output, typeof output);
