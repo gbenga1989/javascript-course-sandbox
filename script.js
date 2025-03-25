@@ -103,7 +103,7 @@
 // console.log(person, newPerson);
 
 // TYPE CONVERSION
-let amount = 99.5;
+// let amount = 'hello';
 
 //convert string to number
 // amount = parseInt(amount);
@@ -117,6 +117,30 @@ let amount = 99.5;
 
 
 //convert string to decimal
-amount = parseFloat(amount);
+// amount = parseFloat(amount);
 
-console.log(amount, typeof amount);
+// convert number to boolean
+// amount = Boolean(amount);
+
+// console.log(amount, typeof amount);
+
+
+// OPERATORS
+
+// arithmetic
+let x;
+
+x = 5 + 5;
+x = 5 - 5;
+x = 5 * 5;
+x = 5 / 5;
+x = 7 % 5;
+
+// concatenation
+x = 'hello' + ' ' + 'world';
+
+// Exponent
+x = 2 ** 3;
+
+// increment
+console.log(x);
