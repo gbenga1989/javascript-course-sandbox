@@ -104,4 +104,13 @@
 
 // TYPE CONVERSION
 let amount = '100';
+
+// change string to number
+// amount = parseInt(amount);
+// amount = +amount;
+// amount = Number(amount);
+
 console.log(amount, typeof amount);
+
+
+// change number to string
