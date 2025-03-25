@@ -50,7 +50,7 @@
 
 // // primitive data types
 // string
-const firstName = 'sam';
+// const firstName = 'sam';
 
 // boolean
 // const hasKids = true;
@@ -84,11 +84,24 @@ const firstName = 'sam';
 
 
 // values are stored on the stack
-const nanme = 'john';
-const age = 30;
+// const name = 'john';
+// const age = 30;
 
-// referendce values are stored on the heap
-const person = {
-  name: 'brad',
-  age: 40
-}
+// // referendce values are stored on the heap
+// const person = {
+//   name: 'brad',
+//   age: 40
+// };
+
+// let newName = name;
+// newName ='jonathan';
+
+// let newPerson = person;
+// newPerson.name = 'bradley';
+
+// console.log( name, newName);
+// console.log(person, newPerson);
+
+// TYPE CONVERSION
+let amount = '100';
+console.log(amount, typeof amount);
