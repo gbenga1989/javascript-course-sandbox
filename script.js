@@ -143,4 +143,21 @@ x = 'hello' + ' ' + 'world';
 x = 2 ** 3;
 
 // increment
+x = 2;
+// x = x + 1;
+x++;
+
+// decrement
+x = x - 1;
+x--;
+
+// Assignment operators
+x = 10;
+
+x +=5 ;
+
+// comparison operators
+x = 2 == 4;
+x =2 ===2;
+
 console.log(x);
