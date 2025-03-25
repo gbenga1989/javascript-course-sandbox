@@ -103,14 +103,20 @@
 // console.log(person, newPerson);
 
 // TYPE CONVERSION
-let amount = '100';
+let amount = 99.5;
 
-// change string to number
+//convert string to number
 // amount = parseInt(amount);
 // amount = +amount;
 // amount = Number(amount);
 
+
+//convert number to string
+// amount = amount.toString();
+// amount = String(amount);
+
+
+//convert string to decimal
+amount = parseFloat(amount);
+
 console.log(amount, typeof amount);
-
-
-// change number to string
