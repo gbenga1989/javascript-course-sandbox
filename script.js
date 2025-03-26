@@ -181,20 +181,26 @@
 
 // WORKING WITH STRINGS
 
-let x;
+// let x;
 
-const name = 'john';
-const age = 31;
-
-
-x = 'hello, my name is ' + name + 'i am ' + age + 'years old today'
+// const name = 'john';
+// const age = 31;
 
 
-// template literals
+// x = 'hello, my name is ' + name + 'i am ' + age + 'years old today'
 
-x = `Hello, my name is ${name} and i am ${age} years old tomorrow`;
+
+// // template literals
+
+// x = `Hello, my name is ${name} and i am ${age} years old tomorrow`;
 
 // string properties and methods
-const s = 'hello world'
+const s = new String ('hello world');
+x = typeof s;
+
+x = s.length;
+
+// access value by keys
+x = s[1];
 
 console.log(x);
