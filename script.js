@@ -224,4 +224,6 @@ x = '             hello world'
 x= x.trim();
 
 x = s.replace('world', 'john');
+
+x = s.includes('hello');
 console.log(x);
