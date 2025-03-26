@@ -234,12 +234,17 @@
 // console.log(x);
 
 
-const myString = 'developer';
+// const myString = 'developer';
 
-let myNewString;
+// let myNewString;
 
-// solution 1
-myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
+// // solution 1
+// myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
 
 
-console.log(myNewString);
+// console.log(myNewString);
+
+
+const num = 5;
+
+console.log(typeof num);
