@@ -232,3 +232,11 @@ x = s.valueOf();
 x = s.split('');
 
 console.log(x);
+
+const myString = 'developer';
+
+ myNewString = myString.charAt(0);
+myNewString = myString.toUpperCase(0)
+myNewString = myString.slice(-10, -2)
+
+console.log(myNewString);
