@@ -228,4 +228,7 @@ x = s.replace('world', 'john');
 x = s.includes('hello');
 
 x = s.valueOf();
+
+x = s.split('');
+
 console.log(x);
