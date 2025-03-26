@@ -168,12 +168,33 @@
 
 // TYPE COERCION
 
+// let x;
+
+// x = 5 + Number('5');
+// x = 5 * '5';
+// x = 5 + null;
+
+// x = 5 + undefined;
+
+// console.log(x, typeof x);
+
+
+// WORKING WITH STRINGS
+
 let x;
 
-x = 5 + Number('5');
-x = 5 * '5';
-x = 5 + null;
+const name = 'john';
+const age = 31;
 
-x = 5 + undefined;
 
-console.log(x, typeof x);
+x = 'hello, my name is ' + name + 'i am ' + age + 'years old today'
+
+
+// template literals
+
+x = `Hello, my name is ${name} and i am ${age} years old tomorrow`;
+
+// string properties and methods
+const s = 'hello world'
+
+console.log(x);
