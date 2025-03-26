@@ -226,4 +226,6 @@ x= x.trim();
 x = s.replace('world', 'john');
 
 x = s.includes('hello');
+
+x = s.valueOf();
 console.log(x);
