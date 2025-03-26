@@ -214,4 +214,14 @@ x = s.indexOf('d');
 
 x = s.substring(0, 4)
 
+x = s.slice(-11, -6)
+
+x = s.trim(-11, -6)
+
+
+x = '             hello world'
+
+x= x.trim();
+
+x = s.replace('world', 'john');
 console.log(x);
