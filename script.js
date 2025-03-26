@@ -195,48 +195,51 @@
 // x = `Hello, my name is ${name} and i am ${age} years old tomorrow`;
 
 // string properties and methods
-const s = new String ('hello world');
-x = typeof s;
+// const s = new String ('hello world');
+// x = typeof s;
 
-x = s.length;
+// x = s.length;
 
-// access value by keys
-x = s[1];
+// // access value by keys
+// x = s[1];
 
-x = s.__proto__;
+// x = s.__proto__;
 
-x = s.toUpperCase();
-x = s.toLowerCase();
+// x = s.toUpperCase();
+// x = s.toLowerCase();
 
-x = s.charAt(0);
+// x = s.charAt(0);
 
-x = s.indexOf('d');
+// x = s.indexOf('d');
 
-x = s.substring(0, 4)
+// x = s.substring(0, 4)
 
-x = s.slice(-11, -6)
+// x = s.slice(-11, -6)
 
-x = s.trim(-11, -6)
+// x = s.trim(-11, -6)
 
 
-x = '             hello world'
+// x = '             hello world'
 
-x= x.trim();
+// x= x.trim();
 
-x = s.replace('world', 'john');
+// x = s.replace('world', 'john');
 
-x = s.includes('hello');
+// x = s.includes('hello');
 
-x = s.valueOf();
+// x = s.valueOf();
 
-x = s.split('');
+// x = s.split('');
 
-console.log(x);
+// console.log(x);
+
 
 const myString = 'developer';
 
- myNewString = myString.charAt(0);
-myNewString = myString.toUpperCase(0)
-myNewString = myString.slice(-10, -2)
+let myNewString;
+
+// solution 1
+myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
+
 
 console.log(myNewString);
