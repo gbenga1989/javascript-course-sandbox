@@ -203,4 +203,15 @@ x = s.length;
 // access value by keys
 x = s[1];
 
+x = s.__proto__;
+
+x = s.toUpperCase();
+x = s.toLowerCase();
+
+x = s.charAt(0);
+
+x = s.indexOf('d');
+
+x = s.substring(0, 4)
+
 console.log(x);
