@@ -266,5 +266,5 @@
 // MATH OBJECT
 let x;
 
-x = Math.sqrt(1)
+x = Math.sqrt(1, 2)
 console.log(Math);
