@@ -244,7 +244,27 @@
 
 // console.log(myNewString);
 
+// WORKING WITH NEW STRINGS
 
-const num = new Number(5);
+// let x;
+// const num = new Number(5.453);
 
-console.log(typeof num);
+// x = num.toString();
+
+// x = num.toString().length;
+
+// x =num.toFixed(2);
+
+// x=num.toPrecision(3);
+
+// x=num.toExponential(2);
+
+// x = num.toLocaleString('en-us');
+
+// console.log(x);
+
+// MATH OBJECT
+let x;
+
+x = Math.sqrt(1)
+console.log(Math);
