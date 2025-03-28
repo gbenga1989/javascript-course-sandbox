@@ -266,5 +266,16 @@
 // MATH OBJECT
 let x;
 
-x = Math.sqrt(1, 2, 3,4,5,6789)
-console.log(Math);
+x = Math.sqrt(9)
+
+x = Math.abs(5)
+
+x = Math.pow(2,3)
+
+x = Math.min(4, 5, 3)
+
+x = Math.random();
+
+x = Math.floor(Math.random() * 100 + 1); 1,
+
+console.log(x);
