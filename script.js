@@ -270,7 +270,7 @@ x = Math.sqrt(9)
 
 x = Math.abs(5)
 
-x = Math.pow(2,3)
+x = Math.pow(2,3, 4)
 
 x = Math.min(4, 5, 3)
 
