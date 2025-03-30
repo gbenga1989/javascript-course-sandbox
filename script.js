@@ -276,6 +276,6 @@ x = Math.min(4, 5, 3)
 
 x = Math.random();
 
-x = Math.floor(Math.random() * 100 + 1, 2, 3, 4); 1, 21, 3, 
+x = Math.floor(Math.random() * 100 + 1, 2, 3, 4); 1, 21, 3, 4, 
 
 console.log(x);
