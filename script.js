@@ -264,18 +264,147 @@
 // console.log(x);
 
 // MATH OBJECT
-let x;
+// let x;
 
-x = Math.sqrt(9)
+// x = Math.sqrt(9)
 
-x = Math.abs(5)
+// x = Math.abs(5)
 
-x = Math.pow(2,3, 4)
+// x = Math.pow(2,3, 4)
 
-x = Math.min(4, 5, 3)
+// x = Math.min(4, 5, 3)
 
-x = Math.random();
+// x = Math.random();
 
-x = Math.floor(Math.random() * 100 + 1, 2, 3, 4); 1, 2, 3, 4, 5, 6, 7, 8, 9
+// x = Math.floor(Math.random() * 100 + 1, 2, 3, 4); 
 
-console.log(x);
+// console.log(x);
+
+// const x = Math.floor(Math.random() * 100 + 1);
+// const y = Math.floor(Math.random() * 50 + 1);
+
+// // get the sum
+// const sum = x + y;
+// const sumOutput = `${x} + ${y} = ${sum}`;
+// console.log(sumOutput);
+
+
+// // get the difference
+// const diff = x - y;
+// const diffOutput = `${x} - ${y} = ${diff}`;
+// console.log(diffOutput);
+
+
+// // get the product
+
+// const product = x * y;
+// const productOutput = `${x} * ${y} = ${product}`;
+// console.log(productOutput);
+
+// dates and times
+// let d;
+
+// d = new Date();
+
+// d =d.toString()
+
+// d =new Date (2021, 0, 12, 30);
+
+// d = new Date('2021-07-10');
+
+
+
+// Method on date object
+
+// let x;
+// let d = new Date();
+
+// x = d.toString();
+// x = d.getTime();
+// x = d.valueOf();
+
+// x = d.getFullYear()
+
+// console.log(x);
+
+
+
+
+
+
+
+// 4/2/20205
+// FUNCTIONS, SCOPE AND EXECUTION CONTEXT
+
+// 2.Basics
+// A function is a way to group code to run together and can use anywhere
+
+// function sayHello(){
+//   console.log('hello world');
+// }
+
+// this is called invoking/calling a function
+// sayHello();
+
+// defining/declaring a function
+// function add (num1, num2){
+//   console.log(num1 + num2);
+// }
+
+// (when you pass in parameters/values to a function, it is known as passing arguements)
+// add(5, 10);
+
+// function subtract(num1, num2){
+//   return num1 - num2;
+// }
+
+// const result = subtract(10, 2)
+// console.log(result);
+
+
+// 3. More on parameters
+
+// function registerUser(user = `Rot`) {
+//   // if (!user){
+//   //   user = 'Bot'
+//   // }
+//   return user  + ` is registered`;
+// }
+
+// console.log(registerUser ());
+
+// rest parameters
+// function sum (...numbers){
+//   let total = 0;
+
+//   for (const num of numbers){
+//     total += num;
+//   }
+
+//   return total;
+// }
+
+// console.log(sum(1, 2, 3, 4, 5, 6, 100 ));
+
+// objects as param
+// function loginUser(user){
+//   return `The user  ${user.name} with the id of ${user.id} is logge in`
+// }
+
+// const user = {
+//   id:1,
+//   name:'john',
+// };
+// console.log(loginUser(user));
+
+  // arrays as params
+  // the rest operator(...) turns everything that i have into an array
+  function getRandom(arr){
+    const randomIndex = Math.floor(Math.random() * arr.length);
+
+    const item = arr[randomIndex]
+
+    console.log(item);
+  }
+
+  getRandom([1, ])
