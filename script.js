@@ -407,4 +407,4 @@
     console.log(item);
   }
 
-  getRandom([1, ])
+  getRandom([1,2, ])
