@@ -515,7 +515,7 @@
     name: 'Brad'
   })
 
-  const numbers = [1];
+  const numbers = [1,2];
   numbers.forEach(function (n) {
     console.log(n);
   });
