@@ -501,29 +501,70 @@
   // }
 
   // arrow function
-  const add = (a,b) => {
-    return a + b;
-  };
+  // const add = (a,b) => {
+  //   return a + b;
+  // };
 
-  // implicit return
-  const subtract = (a,b) => a-b;
+  // // implicit return
+  // const subtract = (a,b) => a-b;
 
-  const double = (a) => a * 2;
+  // const double = (a) => a * 2;
   
-  // returning an object
-  const createObj = () => ({
-    name: 'Brad'
-  })
+  // // returning an object
+  // const createObj = () => ({
+  //   name: 'Brad'
+  // })
 
-  const numbers = [1,2,3,4,5,6,7,8,9,10];
-  numbers.forEach(function (n) {
-    console.log(n);
-  });
+  // const numbers = [1,2,3,4,5,6,7,8,9,10];
+  // numbers.forEach(function (n) {
+  //   console.log(n);
+  // });
 
-  // arrow function in a call back
-  numbers.forEach((n) => console.log(n));
+  // // arrow function in a call back
+  // numbers.forEach((n) => console.log(n));
 
-  console.log(add(1,2));
-  console.log(subtract(10,2));
-  console.log(double(10));
-  console.log(createObj(10));
+  // console.log(add(1,2));
+  // console.log(subtract(10,2));
+  // console.log(double(10));
+  // console.log(createObj(10));
+
+  // 9.Immeidately invoked function
+
+  // 10.Function challenges
+  // 1.
+  // function getCelsius(f){
+  //   const celsius = ((f - 32) * 5) /9;
+  //   return celsius
+  // }
+
+  // const getCelsius = (f) => ((f - 32) * 5) /9;
+  // console.log(`The temperature is ${getCelsius(52)} \xB0C`);
+
+  // 2.Create an arrow function called minMax() that takes in an array of numbers and returns an object with the minimum and maximum numbers in the array.
+
+//   function minMax(arr){
+//     const min = Math.min(...arr);
+//     const max = Math.max(...arr);
+    
+
+//     return{
+//       min,
+//       max,
+//     };
+
+//   }
+  
+  
+//  console.log(minMax([1,2,3,4,5,32,56])); 
+
+//  challenge 3:Create an IIFE (Immediately Invoked Function Expression) that takes in the length and width of a rectangle outputs it to the console in a message as soon as the page loads.
+
+((length, width) => {
+  const area = length * width;
+
+  const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`
+
+  console.log(output, 1, );
+})(20,5);
+
+// 11.Execution context- is a special environment created to handle to transformation and execution of code
