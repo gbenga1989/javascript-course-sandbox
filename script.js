@@ -564,7 +564,7 @@
 
   const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`
 
-  console.log(output, 1,2 );
+  console.log(output, 1,2,3 );
 })(20,5);
 
 // 11.Execution context- is a special environment created to handle to transformation and execution of code
