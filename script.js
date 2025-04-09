@@ -436,7 +436,7 @@
   // (local sope refers to the scope i am in)
 
   // 5. Block scope
-  const x = 100; 
+  // const x = 100; 
 
 // (this is a block)
   // if(true){
@@ -559,12 +559,158 @@
 
 //  challenge 3:Create an IIFE (Immediately Invoked Function Expression) that takes in the length and width of a rectangle outputs it to the console in a message as soon as the page loads.
 
-((length, width) => {
-  const area = length * width;
+// ((length, width) => {
+//   const area = length * width;
 
-  const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`
+//   const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`
 
-  console.log(output, 1,2,3,4,5,6,7,8,9 );
-})(20,5);
+//   console.log(output, );
+// })(20,5);
 
 // 11.Execution context- is a special environment created to handle to transformation and execution of code
+
+
+
+// 05. LOGIC AND CONTROL FLOW
+
+// 2. if statement
+// if(true){
+//   console.log('this is true');
+// }
+
+// if(false){
+//   console.log('This is not true');
+// }
+
+// const x = 35;
+// const y = 50;
+
+// if(x > y){
+//   console.log(`${x} is greater than ${y}`);
+// }
+
+// if(x === y){
+//   console.log(`${x} is equal to ${y}`);
+// } else{
+//   console.log(`${x} is not equal to ${y}`);
+// }
+
+// if (x  !==y ){
+//   const z = 20;
+//   console.log(`${z} is 20`);
+// }
+
+// // shorthand if
+// if(x > y) console.log(`${x} is greater than ${y}`)
+//  else
+//   console.log('this in not so very true');
+
+// 3. else if
+
+// const d = new Date(10, 30, 2022, 6, 0, 0);
+// const hour = d.getHours();
+
+
+// if(hour < 12){
+//   console.log('Good morning');
+// } else if(hour < 18){
+// console.log('Good afternoon');
+// }
+//  else{
+//   console.log('Good night');
+// }
+
+// // nested if
+// if(hour < 12){
+//   console.log('Good morning');
+
+//   if (hour === 6){
+//     console.log('Wake up');
+//   }
+// }
+
+// else if(hour < 18){
+// console.log('Good afternoon');
+// }
+//  else{
+//   console.log('Good night');
+
+//   if (hour >= 20){
+//     console.log('zzzzzzzzz!');
+//   }
+// }
+
+// if (hour >= 7 && hour < 15){
+//   console.log('It is work time!');
+// }
+
+// if (hour === 6 || hour === 20){
+//   console.log('Brush your teeth');
+// }
+
+// 4.switches
+// const d = new Date(2022, 1, 10, 8, 0, 0);
+// const month = d.getMonth();
+// const hour = d.getHours();
+
+// switch(month){
+//   case 1:
+//     console.log('It is january');
+//     break;
+//   case 2:
+//     console.log('It is feburary');
+//     break;
+//   case 3:
+//     console.log('It is march');
+//     break;
+  
+//   default:
+//     console.log('it ins not jan, feb or march');
+
+// }
+
+// switch(true){
+//   case hour < 12:
+//     console.log('Good morning');
+//     break;
+//   case hour < 18:
+//     console.log('Good afternoon');
+//     break;
+//   default:
+//     console.log('Good night');
+// }
+
+// 4. challenge: Create a function called calculator that takes three parameters: num1, num2 and operator. The operator can be +, -, * or /. The function should return the result of the calculation. If anything other than the four operators is passed in, the function should return an error message.
+
+// function calculator(num1, num2, operator){
+//   let result;
+
+//   switch(operator){
+//     case '+':
+//       result = num1 + num2;
+//       break
+//     case '-':
+//       result = num1 - num2;
+//       break
+//     case '*':
+//       result = num1 * num2;
+//       break
+//     case '/':
+//       result = num1 / num2;
+//       break
+//     default:
+//       result = 'invalid operator';
+//   }
+
+//   console.log(result);
+//   return result;
+// }
+
+// calculator(5, 2, '/');
+
+// 6.truthy or falsy value
+const email = 'test@test.com';
+
+if (email){
+  console.log('you passed in an email 1, ');
+}
