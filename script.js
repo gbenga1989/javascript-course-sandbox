@@ -708,9 +708,278 @@
 
 // calculator(5, 2, '/');
 
-// 6.truthy or falsy value
-const email = 'test@test.com';
 
-if (email){
-  console.log('you passed in an email 1,2,3,4,5,6,7,8 ');
+
+
+// 6.Truthy or falsy value
+// const email = 'test@test.com';
+
+// if (email){
+//   console.log('you passed in an email');
+// }
+// (when we pass something to an if statement, it converts/coerced to a boolean - a string with any value is a boolean)
+
+// Falsy Values:
+// - false
+// - 0
+// - "" or '' (Empty string)
+// - null
+// - undefined
+// - NaN
+
+// Truthy Values:
+// - Everything else that is not falsy
+// - true
+// - '0' (0 in a string)
+// - ' ' (space in a string)
+// - 'false' (false in a string)
+// - [] (empty array)
+// - {} (empty object)
+// - function () {} (empty function)
+
+// const x = '';
+
+// if (x){
+//   console.log('This is truthy');
+// } else {
+//   console.log('this is falsy');
+// }
+
+// console.log(Boolean(x));
+
+// // truthy and falsy cavaets
+// const children = 0;
+
+// if (!isNaN(children)){
+//   console.log(`you have ${children} children`);
+// } else {
+//   console.log('please enter number of children');
+// }
+
+// // checking for empty arrays
+// const posts = ['post one'];
+
+// if(posts.length > 0){
+//   console.log('list posts');
+// } else {
+//   console.log('No posts to list');
+// }
+
+// // checking for empty objects
+// const user = {
+//   name: 'Brad'
+// };
+
+// if (Object.keys(user).length > 0){
+//   console.log('list user');
+// } else {
+//   console.log('no user');
+// }
+
+// // loose equality (==)
+// console.log(false == 0);
+// console.log('' == 0);
+// console.log(null == undefined);
+
+
+
+// 7. Logical operators
+// console.log(10 < 20 && 30>15 && 40 >30);
+// console.log(10 >20 || 30 < 15);
+
+// // && - will return the first falsy value or the last value
+// let a;
+
+// a = 10 && 20;
+// a = 10 && 20 && 30;
+
+// console.log(a);
+
+// const posts = ['post one', 'post two']
+
+// posts.length > 0 && console.log(posts[0]);
+
+// // || -will return the first truthy value or the last value
+// let b;
+
+// b = 10 || 20;
+// b = 0 || 20;
+// b = 0 || null || '' || undefined;
+
+
+// console.log(b);
+
+// //  ?? - Returns the right side operand when the left is either null or undefined
+
+// let c;
+
+// c = 10 ?? 20;
+// c = null ?? 20;
+// c = undefined ?? 30;
+// c = 0 ?? 30;
+
+// console.log(c);
+
+
+
+// 8.Logical assignment
+// ||= assigns the right side value only if the left is a falsy value.
+
+// let a = false;
+
+// if (!a){
+//   a = 20;
+// }
+
+// a = a || 10;
+
+// a ||=10;
+
+// console.log(a);
+
+// // &&= assigns the right side value only if the left is a truthy value.
+// let b = 10;
+
+// if (b){
+//   b = 20;
+// }
+
+// b = b && 20;
+
+// b &&= 20;
+
+// console.log(b);
+
+// // ??= assigns the right side value only if the left is null or undefined.
+
+// let c = false;
+
+// if (c === null || c === undefined){
+//   c = 20;
+// }
+
+// c = c ?? 20;
+// console.log(c);
+
+
+
+// 9. Tenary operators
+// const age = 17;
+
+// // using an if statement
+// if(age >= 18){
+//   console.log('you can vote');
+// } else {
+//   console.log('you can not vote');
+// }
+
+// // using a tenary operator
+// age >= 18 ? console.log('you can vote'): console.log('you can not vote');
+
+
+// // assigning a conditional value to a variable
+// const canVote = age >= 18 ? true : false;
+// const canVote2 = age >= 18 ? 'you can vote' : 'you can not vote';
+// console.log(canVote);
+// console.log(canVote2);
+
+
+// // multiple statements
+// const auth = true;
+// let redirect;
+
+// if (auth){
+//    alert('welcome to the dashboard');
+//     redirect = '/dashboard';
+// } else{
+//   alert('Access denied');
+//   redirect = '/login'
+// }
+
+// const redirect = auth ? (alert('welcome to the dashboard'), '/dashboard') : (alert('Access denied'), '/login')
+
+// console.log(redirect);
+
+// auth ? console.log('welcome to the dahboard') : null;
+
+// auth  && console.log('welcome to the dahboard');
+
+
+
+
+// 6.LOOPS AND HIGH ORDER ARRAY METHODS
+// A loop is a control structure that provides a way to do iteration in programming and iteration is a process you repeat somethig until a condition is met or not
+
+// for (let i = 0; i <= 10 ; i++) {
+//   if(i === 7){
+//     console.log('7 is my lucky number');
+//   } else {
+//     console.log('Number' + i);
+//   }
+// }
+
+// nest loops
+// for (let i =1; i <= 10; i++){
+//    console.log('Number' + i);
+
+//    for (let j =1; j<= 10; j++ ){
+//     console.log(`${i} * ${j} = ${i * j}`);
+//    }
+// }
+
+// loop through an array
+// const names = ['brad', 'sam', 'sara', 'john', 'tim' ];
+
+// for (let i = 0; i < names.length; i++){
+//   if( i ===2){
+//     console.log(names[i] + 'is the best');
+//   } else {
+//     console.log(names[i]);
+//   }
+//   console.log(names[i]);
+// }
+
+// 3.break and continue statement
+// for (let i = 0; i <= 20; i++){
+//   if (i === 15) {
+//     console.log('breaking....');
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// // continue
+// for(let i = 0; i <= 20; i++){
+//   if (i===13){
+//     console.log('skipping 13...');
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+
+// 4.while and do loops
+// let i = 0;
+
+// while (i <= 20){
+//   console.log('numbeer' + i);
+//   i++;
+// }
+
+// loop over array
+// const arr = [10, 20, 30, 40, 50];
+
+// while (i < arr.length) {
+//   console.log(arr[i]);
+//   i++;
+// }
+
+// nesting while loops
+while (i <= 5){
+  console.log('number' + i,1);
+
+  let j = 1;
+  while (j <= 5){
+    console.log(`${i}`);
+  }
 }
