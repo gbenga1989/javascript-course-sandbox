@@ -976,7 +976,7 @@
 
 // nesting while loops
 while (i <= 5){
-  console.log('number' + i,1,2,3);
+  console.log('number' + i,1,2,3,4);
 
   let j = 1;
   while (j <= 5){
