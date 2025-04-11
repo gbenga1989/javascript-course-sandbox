@@ -959,7 +959,7 @@
 
 
 // 4.while and do loops
-// let i = 0;
+// let i = 21;
 
 // while (i <= 20){
 //   console.log('numbeer' + i);
@@ -975,11 +975,288 @@
 // }
 
 // nesting while loops
-while (i <= 5){
-  console.log('number' + i,1,2,3,4,5,6,7,8,9,10);
+// while (i <= 5){
+//   console.log('number' + i);
 
-  let j = 1;
-  while (j <= 5){
-    console.log(`${i}`);
-  }
-}
+//   let j = 1;
+//   while (j <= 5){
+//     console.log(`${i} * ${j} = ${i * j}`);
+//     j++;
+//   }
+//   i++;
+// }
+
+// do while loop
+// do{
+//   console.log('number' + i);
+//   i++;
+// } while (i <= 20);
+
+// challenge:
+// For multiples of three print "Fizz" instead of the number
+// For multiples of five print "Buzz"
+// For numbers which are multiples of both three and five print "FizzBuzz".
+
+// for (let i = 1; i <= 100; i++){
+//   if(i % 3 ===0 && i % 5 === 0) {
+//     console.log('Fizzbuzz');
+//   }
+  
+//   else if (i % 3 === 0){
+//     console.log('fizz');
+//   } else if(i % 5 === 0){
+//     console.log('Buzz');
+//   } else{
+//       console.log(i);
+//   }
+// }
+
+
+// while loop
+
+// let j = 1;
+
+// while (j <= 100){
+//   if(j % 15 === 0) {
+//     console.log('Fizzbuzz');
+//   }
+  
+//   else if (j % 3 === 0){
+//     console.log('fizz');
+//   } else if(j % 5 === 0){
+//     console.log('Buzz');
+//   } else{
+//       console.log(j);
+//   }
+
+// j++;
+// }
+
+// 6. for of loop
+//  const items = ['book', 'table', 'chair', 'kite'];
+
+//  for( let i = 0; i < items.length; i++){
+//   console.log(items[i]);
+//  }
+
+
+// loop through arrays
+//  const items = ['book', 'table', 'chair', 'kite'];
+//  const users = [
+//   {name: 'Brad'},
+//   {name: 'kate'},
+//   {name: 'steve'},
+//  ];
+
+//  for( const item of items){
+//   console.log(item);
+//  }
+
+// for(const user of users){
+//   console.log(user.name);
+// }
+
+// // loop over strign
+// const str = 'hello world';
+// for(const letter of str){
+//   console.log(letter);
+// }
+
+// loop over maps
+// const map = new Map();
+// map.set('name', 'john');
+// map.set('age', 30)
+
+// for (const[key, value] of map){
+//   console.log(key, value);
+// }
+
+// 7.for in loop
+// const colorObj ={
+//   color1:'red',
+//   color2:'blue',
+//   color3:'orange',
+//   color4:'green',
+// };
+
+// for (const key in colorObj){
+//   console.log(key, colorObj[key]);
+// }
+
+// const colorArr = ['red', 'green', 'blue', 'yellow'];
+
+// for(const key in colorArr){
+//   console.log(colorArr[key]);
+// }
+
+
+// 8.array for each
+// const socials = ['twitter', 'linkedin', 'facebook', 'insta'];
+
+// console.log(socials);
+
+// socials.forEach(function (item){
+//   console.log(item);
+
+// })
+
+// socials.forEach( (item, index, arr) => console.log(`${index} - ${item}`, arr));
+
+// function logsocials(social){
+//   console.log(social);
+// }
+
+// socials.forEach(logsocials);
+
+// const socialObjs = [
+//   {name: 'twitter', url:'https://twitter.com'},
+//   {name: 'facebook', url:'https://facebook.com'},
+//   {name: 'linkedin', url:'https://linkedin.com'},
+//   {name: 'instagram', url:'https://instagram.com'}
+// ]
+
+// socialObjs.forEach((item) => console.log(item.url));
+
+// 9. array.filter
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+// const evenNumbers = numbers.filter (function (number){
+//   return number % 2 ===0;
+// })
+
+// short version
+// const evenNumbers = numbers.filter((number) => number % 2 === 0);
+
+// same with foreach
+// let evenNumbers = [];
+// numbers.forEach(number => {
+//   if (number % 2 === 0){
+//     evenNumbers.push(number)
+//   }
+// });
+
+// console.log(evenNumbers);
+
+// 10.array.map
+// const numbers = [1,2,3,4,5];
+
+// const doubledNumbers = numbers.map((number) => number * 2);
+// console.log(doubledNumbers);
+
+// // same with foreach
+// const doubledNumbers2 = [];
+
+// numbers.forEach((number) => {
+//   doubledNumbers2.push(number *2);
+
+// });
+
+// console.log(doubledNumbers2);
+
+// 11.array reduce
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// const sum = numbers.reduce(function(accumulator, currentValue){
+//  return accumulator + currentValue;
+// }, 0);
+
+// const sum2 = numbers.reduce((acc, cur) => acc + cur, 10)
+
+// console.log(sum2);
+
+// // using a for loop
+// const sum3 = () =>  {
+//   let acc = 0;
+//   for(const cur of numbers){
+//     acc += cur;
+
+
+//   }
+//   return acc;
+// }
+
+// // console.log(sum3());
+
+// const cart = [
+//   {id: 1, name: 'product 1', price: 130},
+//   {id: 2, name: 'product 2', price: 150},
+//   {id: 3, name: 'product 3', price: 175},
+// ]
+
+// const total = cart.reduce (function (acc, product){
+//   return acc + product.price
+// }, 0);
+
+// console.log(total);
+
+// 12.challenge: Take the people array and create an array called youngPeople that stores objects with ONLY name and email properties of all the people that are 25 and under. The name property should have their first and last name
+
+const people = [
+  {
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john@gmail.com',
+    phone: '111-111-1111',
+    age: 30,
+  },
+  {
+    firstName: 'Jane',
+    lastName: 'Poe',
+    email: 'jane@gmail.com',
+    phone: '222-222-2222',
+    age: 25,
+  },
+  {
+    firstName: 'Bob',
+    lastName: 'Foe',
+    email: 'bob@gmail.com',
+    phone: '333-333-3333',
+    age: 45,
+  },
+  {
+    firstName: 'Sara',
+    lastName: 'Soe',
+    email: 'Sara@gmail.com',
+    phone: '444-444-4444',
+    age: 19,
+  },
+  {
+    firstName: 'Jose',
+    lastName: 'Koe',
+    email: 'jose@gmail.com',
+    phone: '555-555-5555',
+    age: 23,
+  },
+];
+
+const youngPeople = people
+.filter ((person) => person.age <= 25)
+.map((person) => ({
+  name: person.firstName + ' ' + person.lastName,
+  email: person.email,
+}))
+
+
+console.log(youngPeople);
+
+
+// challenge 2: Add all of the positive numbers in the array.
+
+const numbers = [2, -30, 50, 20, -12, -9, 7];
+const numbers2 = [1,];
+
+const positiveSum = numbers
+.filter((number) => number > 0)
+.reduce((acc, cur) => acc + cur, 0)
+
+console.log(positiveSum);
+
+
+// challenge 3: Create a new array called capitalizedWords with the words from the words array with the first letter of each word capitalized.
+
+const words = ['coder', 'programmer', 'developer'];
+
+const cWords = words.map((word) => {
+  return word[0]. toUpperCase() + word.slice(1);
+})
+
+console.log(cWords);
