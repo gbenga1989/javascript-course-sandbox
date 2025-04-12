@@ -1190,73 +1190,94 @@
 
 // 12.challenge: Take the people array and create an array called youngPeople that stores objects with ONLY name and email properties of all the people that are 25 and under. The name property should have their first and last name
 
-const people = [
-  {
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john@gmail.com',
-    phone: '111-111-1111',
-    age: 30,
-  },
-  {
-    firstName: 'Jane',
-    lastName: 'Poe',
-    email: 'jane@gmail.com',
-    phone: '222-222-2222',
-    age: 25,
-  },
-  {
-    firstName: 'Bob',
-    lastName: 'Foe',
-    email: 'bob@gmail.com',
-    phone: '333-333-3333',
-    age: 45,
-  },
-  {
-    firstName: 'Sara',
-    lastName: 'Soe',
-    email: 'Sara@gmail.com',
-    phone: '444-444-4444',
-    age: 19,
-  },
-  {
-    firstName: 'Jose',
-    lastName: 'Koe',
-    email: 'jose@gmail.com',
-    phone: '555-555-5555',
-    age: 23,
-  },
-];
+// const people = [
+//   {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     email: 'john@gmail.com',
+//     phone: '111-111-1111',
+//     age: 30,
+//   },
+//   {
+//     firstName: 'Jane',
+//     lastName: 'Poe',
+//     email: 'jane@gmail.com',
+//     phone: '222-222-2222',
+//     age: 25,
+//   },
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Foe',
+//     email: 'bob@gmail.com',
+//     phone: '333-333-3333',
+//     age: 45,
+//   },
+//   {
+//     firstName: 'Sara',
+//     lastName: 'Soe',
+//     email: 'Sara@gmail.com',
+//     phone: '444-444-4444',
+//     age: 19,
+//   },
+//   {
+//     firstName: 'Jose',
+//     lastName: 'Koe',
+//     email: 'jose@gmail.com',
+//     phone: '555-555-5555',
+//     age: 23,
+//   },
+// ];
 
-const youngPeople = people
-.filter ((person) => person.age <= 25)
-.map((person) => ({
-  name: person.firstName + ' ' + person.lastName,
-  email: person.email,
-}))
+// const youngPeople = people
+// .filter ((person) => person.age <= 25)
+// .map((person) => ({
+//   name: person.firstName + ' ' + person.lastName,
+//   email: person.email,
+// }))
 
 
-console.log(youngPeople);
+// console.log(youngPeople);
 
 
 // challenge 2: Add all of the positive numbers in the array.
 
-const numbers = [2, -30, 50, 20, -12, -9, 7];
-const numbers2 = [1,2,3,4,5,6,7,8,9,10];
+// const numbers = [2, -30, 50, 20, -12, -9, 7];
+// const numbers2 = [1,2,3,4,5,6,7,8,9,10];
 
-const positiveSum = numbers
-.filter((number) => number > 0)
-.reduce((acc, cur) => acc + cur, 0)
+// const positiveSum = numbers
+// .filter((number) => number > 0)
+// .reduce((acc, cur) => acc + cur, 0)
 
-console.log(positiveSum);
+// console.log(positiveSum);
 
 
 // challenge 3: Create a new array called capitalizedWords with the words from the words array with the first letter of each word capitalized.
 
-const words = ['coder', 'programmer', 'developer'];
+// const words = ['coder', 'programmer', 'developer'];
 
-const cWords = words.map((word) => {
-  return word[0]. toUpperCase() + word.slice(1);
-})
+// const cWords = words.map((word) => {
+//   return word[0]. toUpperCase() + word.slice(1);
+// })
 
-console.log(cWords);
+// console.log(cWords);
+
+
+
+
+// 07. THE DOCUMENT OBJECT MODEL
+
+// console.dir(document.body);
+
+// console.log(document.body.innerText);
+
+// console.log(document.links[0]);
+
+// document.body.innerHTML = '<h1> hello world </h1>';
+
+// document.write('hello from js')
+
+console.log(document.getElementById('main'));
+const main = document.getElementById('main');
+// main.innerHTML = '<h1> hello from main </h1>'
+
+document.querySelector('#main h1, 1').innerText = 'Hello';
