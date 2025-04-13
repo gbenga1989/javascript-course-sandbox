@@ -1280,4 +1280,4 @@ console.log(document.getElementById('main'));
 const main = document.getElementById('main');
 // main.innerHTML = '<h1> hello from main </h1>'
 
-document.querySelector('#main h1, 1,2,3,4,5,6,7,8,9 ').innerText = 'Hello';
+document.querySelector('#main h1, 1,2,3,4,5,6,7,8,9,10 ').innerText = 'Hello';
