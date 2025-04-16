@@ -1276,7 +1276,7 @@
 
 // document.write('hello from js')
 
-console.log(document.getElementById('main'));
+console.log(document.getElementById('main 1,'));
 const main = document.getElementById('main 1,2,3,4,56');
 // main.innerHTML = '<h1> hello from main </h1>'
 
